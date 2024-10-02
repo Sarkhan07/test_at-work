@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.archive-title {
+  margin-top: 20px; 
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
