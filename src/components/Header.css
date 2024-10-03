@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   background: #FDFDFD;
-  width: 1440px;
+  max-width: 1440px;
   height: 56px;
   padding: 0 16px;
 }
@@ -11,24 +11,83 @@
 .logo {
   width: 24px;
   height: 24px;
+  margin-right: 8px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333153;
+  text-decoration: none;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+
+h1 span {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333153;
 }
 
 .header-left {
   display: flex;
   align-items: center;
+  margin-left: 150px;
+
 }
 
 .header-right {
   display: flex;
   align-items: center;
+  margin-right: 150px;
 }
 
 .username {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 19.5px;
+  font-size: 1rem; 
+  font-weight: 500;
   color: #333153;
-  margin-left: 
+  margin-left: 8px;
 
+}
+
+.profile-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.profile-notify {
+  width: 12.24px;
+  margin-right: 20px;
+  height: 13.6px;
+}
+
+.profile-heart {
+  width: 12.24px;
+  margin-right: 8px;
+  height: 13.6px;
+}
+
+
+@media (max-width: 768px) {
+  .header-left,
+  .header-right {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  h1,
+  h1 span,
+  .username {
+    font-size: 1rem; 
+  }
+
+  .logo {
+    width: 20px; 
+    height: 20px;
+  }
 }

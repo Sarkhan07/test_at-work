@@ -1,19 +1,69 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1160px;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+
 .card {
   position: relative;
   background-color: #fff;
-  border-radius: 8px;
-  padding: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  max-height: 140px;
+  padding: 24px;
+  gap: 20px;
+  border-radius: 16px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .avatar {
-  border-radius: 50%;
-  width: 112px;
+  border-radius: 8%;
+  width: 100%; 
+  max-width: 112px;
   height: 120px;
+  transition: filter 0.3s ease;
 }
+
+
+.archived {
+  filter: grayscale(100%);
+}
+
+.desc {
+  height: 120px;
+  margin-top: -20px;
+  margin-right: 50px;
+
+}
+
+.user {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #22A0BC;  
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+.userAdress {
+  font-size: 1rem;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.userCompany {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
 
 .dropdown {
   position: absolute;
@@ -29,8 +79,8 @@
 }
 
 .dropdown-toggle img {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   transition: transform 0.3s;
 }
 
@@ -79,4 +129,30 @@
 
 .dropdown-menu button + button {
   border-top: 1px solid #eaeaea; 
+}
+
+@media (max-width: 768px) {
+
+
+  .card {
+    width: calc(50% - 10px); 
+    max-width: none; 
+   
+  }
+
+  .user,
+  .userAdress,
+  .userCompany {
+    font-size: 0.5rem; 
+  }
+
+  .desc {
+    margin-right: 0; 
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; 
+  }
 }

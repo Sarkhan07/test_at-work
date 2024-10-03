@@ -2,14 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f4f4f4;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.container h2 {
+  align-self: flex-start;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 140px;
 }
+
 
 .archive-title {
   margin-top: 20px; 
