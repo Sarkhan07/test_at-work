@@ -95,7 +95,7 @@ const Edit = () => {
 
          {isModalVisible && (
           <div className="modal">
-            <img src="/icon.svg" alt="Success" className="modalImage" />
+            <img src="/Icon.svg" alt="Success" className="modalImage" />
             <p>Изменения сохранены!</p>
           </div>
         )}
